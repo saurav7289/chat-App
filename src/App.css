@@ -1,38 +1,68 @@
-.App {
-  text-align: center;
-}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  width: 300px;
+  height: 500px;
+  margin: 20px auto;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden;
 }
 
-.App-link {
-  color: #61dafb;
+.output-area {
+  flex: 1;
+  padding: 10px;
+  overflow-y: auto;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.message {
+  margin: 5px 0;
+  padding: 5px 5px;
+  clear: both;
+}
+
+.sender {
+  float: right;
+  width: fit-content;
+  text-align: end;
+  background-color: #007bff;
+  border-radius: 8px 8px 0px 8px;
+  color: #fff;
+}
+
+.receiver {
+  float: left;
+  width: fit-content;
+  text-align: start;
+  background-color: #f0f0f0;
+  border-radius: 8px 8px 8px 0px;
+}
+
+.input-area {
+  padding: 10px;
+  margin-top: auto;
+}
+
+.input-field {
+  width: calc(100% - 20px);
+  padding: 5px;
+  margin-bottom: 5px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  outline: none;
+}
+
+button[type="submit"] {
+  padding: 5px 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #0056b3;
 }
